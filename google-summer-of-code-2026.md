@@ -2,25 +2,29 @@
 
 ## 📂 Project Ideas
 
-### 💡 Revive the VerneMQ Kubernetes Operator project
+### 💡 Extend the VerneMQ Kubernetes Operator project
 
-👥 **Mentor(s):** NN
+👥 **Mentor(s):** André Fatton
 
-📢 **Communication Channel:** 
+📢 **Communication Channel:** VerneMQ Slack Workspace/Mailing list/VerneMQ Forum
+
+📝 **Repository:** https://github.com/vernemq/vmq-operator/
 
 💬 **Description:**
 
 The VerneMQ Operator is a project to create, configure and manage VerneMQ clusters (stateful sets).
-The project is in alpha state and needs some updates, to ensure it is working with latest releases of Kubernetes and VerneMQ.
-Functions can be extended, if needed.
-
-Current status: https://github.com/vernemq/vmq-operator/
+The project is in alpha state and needs some updates, to ensure it is working with latest releases of Kubernetes and VerneMQ. Based on your own experimentation and research, functions can be extended.
 
 💪 **Desired Skills:** Kubernetes, Operator knowledge, Golang
 
 🎯 **Goals/Deliverables:**
 
-⏳ **Project Duration:** 
+- Determine needed updates
+- Adapt existing functions
+- Adapt and improve configuration of nodes and cluster
+- Experiment with your own ideas and add respective functions
+
+⏳ **Project Duration:** medium (175h)
 
 📈 **Difficulty:** intermediate
 
@@ -28,21 +32,25 @@ Current status: https://github.com/vernemq/vmq-operator/
 
 ### 💡 Complete and extend the VerneMQ WebAdmin project
 
-👥 **Mentor(s):** NN
+👥 **Mentor(s):** André Fatton
 
-📢 **Communication Channel:** 
+📢 **Communication Channel:** VerneMQ Slack Workspace/Mailing list/VerneMQ Forum
+
+📝 **Repository:** https://github.com/vernemq/vmq_webadmin
 
 💬 **Description:**
 
 The VerneMQ WebAdmin is a user contributed frontend project to provide VerneMQ with a web-based management GUI. It uses an exporter plugin that is fully integrated into latest VerneMQ releases. The WebAdmin project is currently not part of a VerneMQ release, due to its alpha state.
 
-Current status: https://github.com/vernemq/vmq_webadmin/
-
-💪 **Desired Skills:** Vue.js, Typescript
+💪 **Desired Skills:** Vue.js, Typescript, Erlang (optional)
 
 🎯 **Goals/Deliverables:**
 
-⏳ **Project Duration:** 
+- Systematically explore `vmq-admin` functions and decide what can be added to Web frontend
+- Experiment with your own ideas and add respective functions
+- Adapt backend exporter application if the frontend needs it
+
+⏳ **Project Duration:** medium (175h)
 
 📈 **Difficulty:** intermediate
 
@@ -50,9 +58,11 @@ Current status: https://github.com/vernemq/vmq_webadmin/
 
 ### 💡 Add `vmq_discovery` extension for dynamic clustering
 
-👥 **Mentor(s):** NN
+👥 **Mentor(s):** TBD
 
-📢 **Communication Channel:** 
+📢 **Communication Channel:** VerneMQ Slack Workspace/Mailing list/VerneMQ Forum
+
+📝 **Repository:** https://github.com/vernemq/vernemq
 
 💬 **Description:**
 
@@ -60,9 +70,12 @@ Add an OTP application to VerneMQ that can offer dynamic discovery and clusterin
 
 💪 **Desired Skills:** Erlang
 
-🎯 **Goals/Deliverables:** vmq_discovery Erlang application
+🎯 **Goals/Deliverables:** 
+- Determine internal API functions to script cluster leaves/joins
+- Develop vmq_discovery using the Erlang/OTP application structure
+- Integrate into VerneMQ (release) and add a test suite (Erlang Common Test)
 
-⏳ **Project Duration:** 
+⏳ **Project Duration:** small (90h)
 
 📈 **Difficulty:** intermediate
 
@@ -72,7 +85,9 @@ Add an OTP application to VerneMQ that can offer dynamic discovery and clusterin
 
 👥 **Mentor(s):** NN
 
-📢 **Communication Channel:** 
+📢 **Communication Channel:** VerneMQ Slack Workspace/Mailing list/VerneMQ Forum
+
+📝 **Repository:** https://github.com/vernemq/vernemq
 
 💬 **Description:**
 
@@ -81,8 +96,12 @@ You could do this natively (Erlang), or use the Lua layer as the current databas
 💪 **Desired Skills:** Lua, Erlang
 
 🎯 **Goals/Deliverables:**
+- Find an appropriate database driver (Erlang based)
+- Implement Erlang modules as an intermediate layer between DB driver and Lua
+- Implement authentication and authorization hooks in Lua scripts
+- Execute load/performance tests
 
-⏳ **Project Duration:** 
+⏳ **Project Duration:** small (90h)
 
 📈 **Difficulty:** intermediate
 
