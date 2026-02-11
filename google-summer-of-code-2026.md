@@ -41,6 +41,7 @@ The project is in alpha state and needs some updates, to ensure it is working wi
 💬 **Description:**
 
 The VerneMQ WebAdmin is a user contributed frontend project to provide VerneMQ with a web-based management GUI. It uses an exporter plugin that is fully integrated into latest VerneMQ releases. The WebAdmin project is currently not part of a VerneMQ release, due to its alpha state.
+We're also open to full refactorings using different technology choices (our main candidate here would be Elixir Phoenix).
 
 💪 **Desired Skills:** Vue.js, Typescript, Erlang (optional)
 
